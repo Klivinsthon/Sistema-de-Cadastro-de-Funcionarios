@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>TAILWIND</title>
+</head>
+
+<body class="font-mono p-5 bg-gray-600">
+    <div class="mx-auto">
+        <form class="base-app" alt="box do app">
+            <section class="mx-auto bg-gray-400 text-center rounded">
+                <span class="font-bold text-2xl">CADASTRO DE FUNCIONÁRIOS</span>
+            </section>
+            <fieldset class="fieldset">
+                <legend class="titulo-fieldset">Dados pessoais</legend>
+                <div class="bloco-inputs">
+                    <div class="primeiro-bloco-input">
+                        <label for="nome" class="font-bold">Nome:</label><br>
+                        <input type="Text" id="nome" class="input-padrao w-6/6">
+                    </div>
+                    <div>
+                        <label for="sobrenome" class="font-bold">Sobrenome:</label><br>
+                        <input type="Text" id="sobrenome" class="input-padrao">
+                    </div>
+                </div>
+                <div class="bloco-inputs">
+                    <div class="primeiro-bloco-input">
+                        <label for="dataNascimento" class="font-bold">Data de nascimento:</label><br>
+                        <input type="date" id="dataNascimento" class="input-padrao w-6/6">
+                    </div>
+                    <div>
+                        <label for="cpf" class="font-bold">CPF:</label><br>
+                        <input type="text" id="cpf" class="input-padrao">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend class="titulo-fieldset">Contato</legend>
+                <div class="bloco-inputs">
+                    <div class="primeiro-bloco-input">
+                        <label for="email" class="font-bold">Email:</label><br>
+                        <input type="email" id="email" class="input-padrao">
+                    </div>
+                    <div>
+                        <label for="telefone" class="font-bold">Telefone:</label><br>
+                        <input type="text" id="telefone" class="input-padrao">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend class="titulo-fieldset">Endereço</legend>
+                <div class="bloco-inputs">
+                    <div class="primeiro-bloco-input">
+                        <label for="cidade" class="font-bold">Cidade:</label><br>
+                        <input type="text" id="cidade" class="input-padrao">
+                    </div>
+                    <div>
+                        <label for="bairro" class="font-bold">Bairro:</label><br>
+                        <input type="text" id="bairro" class="input-padrao">
+                    </div>
+                </div>
+                <div class="bloco-inputs">
+                    <div class="primeiro-bloco-input">
+                        <label for="rua" class="font-bold">Rua:</label><br>
+                        <input type="text" id="rua" class="input-padrao">
+                    </div>
+                    <div>
+                        <label for="numeroCasa" class="font-bold">Número:</label><br>
+                        <input type="text" id="numeroCasa" class="input-padrao input-pequeno">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="flex flex-row-reverse">
+                <button class="botao-primario ml-3">Cadastrar</button>
+                <button class="botao-primario">Exibir</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
