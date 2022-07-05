@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./index.css" rel="stylesheet">
-    <title>TAILWIND</title>
+    <title>SISTEMA DE CADASTRO</title>
 </head>
 
 <body class="font-mono p-5 bg-gray-600">
@@ -76,11 +76,18 @@
                 </div>
             </fieldset>
             <div class="flex flex-row-reverse">
-                <button class="botao-primario ml-3">Cadastrar</button>
-                <button class="botao-primario">Exibir</button>
+                <button type="button" onclick="cadastrarFuncionario()" class="botao-primario ml-3">Cadastrar</button>
+                <button type="button" id="botaoExibir" onclick="exibir()" class="botao-primario">Exibir</button>
+                <button type="button" id="botaoOcultar" onclick="ocultar()" class="botao-primario" style="display: none;">Ocultar</button>
+            </div>
+
+            <div id="area-dados" style="display: none;">
+                <ul id="lista"></ul>
             </div>
         </form>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
