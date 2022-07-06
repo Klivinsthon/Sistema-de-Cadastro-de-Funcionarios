@@ -22,7 +22,7 @@ function cadastrarFuncionario() {
     let lista = document.getElementById("lista")
     let item = document.createElement("li")
     item.style.marginTop = "10px"
-    item.innerText = `Nome: ${nome} ${sobrenome} \nCPF: ${cpf} \nData de nascimento: ${dataNascimento} \nEmail: ${email} \nTelefone: ${telefone} \nEndereço: ${rua}, ${numeroCasa}, ${bairro.toUpperCase()}, ${cidade.toUpperCase()}   `
+    item.innerText = `NOME: ${nome} ${sobrenome} \nCPF: ${cpf} \nDATA DE NASCIMENTO: ${dataNascimento} \nEMAIL: ${email} \nTELEFONE: ${telefone} \nENDEREÇO: ${rua}, ${numeroCasa}, ${bairro.toUpperCase()}, ${cidade.toUpperCase()}   `
     item.appendChild(botaoRemover)
     lista.appendChild(item)
     //limpando campos input
